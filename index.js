@@ -3,23 +3,30 @@
     numz: {
       /**
        * 
+       * turns degrees into radians
        * @param {number} degrees 
-       * @returns number
+       * @returns {number} the degrees in radians
        */
       degreesToRadians(degrees) {
         return degrees * Math.PI / 180;
       },
 
       /**
-       * 
+       * turns radians into degrees
        * @param {number} radians 
-       * @returns number
+       * @returns {number} the degrees in radians
        */
 
       radiansToDegrees(radians) {
         return radians * 180 / Math.PI;
       },
-
+/**
+ * calculates the angle between two points
+ * @param {onject} pointA 
+ * @param {number} pointA.x - x value of points 
+ * 
+ * @returns 
+ */
       getAngleDegrees(pointA, pointB) {
         const
           distanceX = pointB.x - pointA.x,
